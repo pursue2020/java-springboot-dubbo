@@ -24,11 +24,24 @@
         <lombok.version>1.16.12</lombok.version>
         <springboot.version>1.5.1.RELEASE</springboot.version>
         <springboot.dubbo.version>0.1.0</springboot.dubbo.version>
+        <redis.version>2.9.0</redis.version>
+        <zk.version>3.4.9</zk.version>
     </properties>
 
 
     <dependencyManagement>
     <dependencies>
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>${redis.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.zookeeper</groupId>
+            <artifactId>zookeeper</artifactId>
+            <version>${zk.version}</version>
+        </dependency>
+
         <dependency>
             <groupId>com.alibaba.boot</groupId>
             <artifactId>dubbo-spring-boot-starter</artifactId>
@@ -69,6 +82,8 @@
         <module>java-springboot-dubbo-register</module>
         <module>java-springboot-dubbo-consumer</module>
         <module>java-springboot-dubbo-api</module>
+        <module>java-springboot-dubbo-zk-provider</module>
+        <module>java-springboot-dubbo-zk-consumer</module>
     </modules>
 
     <build>
