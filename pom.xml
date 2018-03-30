@@ -84,6 +84,8 @@
         <module>java-springboot-dubbo-api</module>
         <module>java-springboot-dubbo-zk-provider</module>
         <module>java-springboot-dubbo-zk-consumer</module>
+        <module>java-springboot-dubbo-redis-provider</module>
+        <module>java-springboot-dubbo-redis-consumer</module>
     </modules>
 
     <build>
